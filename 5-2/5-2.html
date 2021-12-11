@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+            border: 2px solid #000000;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+             margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            color: black;
+            background-color: white;
+        }
+        .Hovered{
+            border: none;
+            background-color: rgb(223, 222, 222);
+        }
+        .Hovered:hover{
+            background-color: rgb(73, 73, 73);
+            color: white;
+
+        }
+        .activated:active{
+            color: white;
+            background-color: rgb(77, 71, 71);
+        }
+        
+        .disabled{
+            border: 2px solid rgb(97, 88, 88);
+            color: gray;
+        }
+        
+    </style>
+</head>
+<body>
+    <button class="btn enabled">Enabled button</button>
+    <button class="btn Hovered">Hovered button</button>
+    <button class="btn focused" autofocus onclick="alert('this is focused btn')">Focused button</button>
+    <button class="btn activated" >Active button</button>
+    <button class="btn disabled" disabled> Disabled button</button>
+    
+</body>
+</html>
