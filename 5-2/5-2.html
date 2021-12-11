@@ -37,13 +37,15 @@
             border: 2px solid rgb(97, 88, 88);
             color: gray;
         }
-        
+        .focused:focus{
+            background-color: yellow ;
+        }
     </style>
 </head>
 <body>
     <button class="btn enabled">Enabled button</button>
     <button class="btn Hovered">Hovered button</button>
-    <button class="btn focused" autofocus onclick="alert('this is focused btn')">Focused button</button>
+    <button class="btn focused">Focused button</button>
     <button class="btn activated" >Active button</button>
     <button class="btn disabled" disabled> Disabled button</button>
     
